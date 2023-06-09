@@ -1,0 +1,80 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: 'Sora', sans-serif;
+  background-image: url("mountains-blurred.png");
+  background-color: rgba(24, 20, 47, 0.8);
+  background-blend-mode: overlay;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+}
+
+.rectangle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(44, 33, 70, 0.9);
+  border-radius: 20px;
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.3);
+  padding: 30px;
+  text-align: center;
+}
+
+
+.maintitle {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 3rem;
+  font-weight: 600;
+  color: #fff;
+}
+
+form {
+  margin-top: 10px;
+}
+
+input[type="text"] {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  width: 70%;
+  font-size: 1.2rem;
+}
+
+button[type="submit"] {
+  padding: 10px 20px;
+  background: linear-gradient(to right, #3498db, #8e44ad);
+  color: #fff;
+  border-radius: 5px;
+  border: none;
+  font-size: 1.2rem;
+  margin-left: 10px;
+  margin-top: 18px;
+  cursor: pointer;
+  animation: gradientAnimation 1s infinite;
+  transition: transform 0.3s ease-in-out;
+}
+
+button[type="submit"]:hover {
+  transform: scale(1.1);
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
